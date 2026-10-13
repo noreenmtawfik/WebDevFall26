@@ -1,0 +1,130 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    color: #333333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background-color: #1f242d;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #a0aec0;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 14px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Sections Common Style */
+section {
+    padding: 45px 20px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1f242d;
+}
+
+/* About Section */
+.about-section p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #4a5568;
+}
+
+/* Projects Grid using inline-block from the lab */
+.projects-section {
+    background-color: #edf2f7;
+}
+
+.project-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    min-height: 180px;
+    background-color: #ffffff;
+    margin: 12px;
+    padding: 24px;
+    text-align: left;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.project-card h3 {
+    font-size: 18px;
+    color: #2b2d42;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Contact Details Box */
+.contact-card {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px 36px;
+    text-align: left;
+    min-width: 320px;
+}
+
+.contact-card p {
+    font-size: 15px;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.contact-card p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-card a {
+    color: #1f242d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #1f242d;
+    color: #a0aec0;
+    padding: 20px;
+    font-size: 13px;
+}
