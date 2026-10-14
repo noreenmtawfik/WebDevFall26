@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f6f3ed; /* Warm oat */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.calculator-container {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 28px;
+  box-shadow: 0 12px 35px rgba(62, 52, 47, 0.08);
+  border: 1px solid #eee7de;
+  width: 100%;
+  max-width: 330px;
+}
+
+.calc-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f5539;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Display screen */
+.display {
+  background-color: #faf7f2;
+  color: #2b2118;
+  font-size: 38px;
+  font-weight: 400;
+  text-align: right;
+  padding: 18px 16px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ebdcd0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Buttons grid */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  border: none;
+  height: 58px;
+  border-radius: 50%;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Number buttons */
+.btn-number {
+  background-color: #f4ede4; /* Warm milk */
+  color: #3e342f;
+}
+
+.btn-number:hover {
+  background-color: #ebdcd0;
+}
+
+/* Clear, % and 00 buttons */
+.btn-secondary {
+  background-color: #e6ded5;
+  color: #58493e;
+}
+
+.btn-secondary:hover {
+  background-color: #ddd3c8;
+}
+
+/* Operators (+, -, *, /, =) */
+.btn-operator {
+  background-color: #c97a51; /* Warm Terracotta */
+  color: #ffffff;
+}
+
+.btn-operator:hover {
+  background-color: #b5673e;
+}
+
+/* The zero button spans 2 columns zay iOS */
+.btn-zero {
+  grid-column: span 2;
+  border-radius: 30px;
+  justify-content: flex-start;
+  padding-left: 24px;
+}
